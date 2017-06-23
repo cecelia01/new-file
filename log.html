@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+
+<title>LOG IN</title>
+
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+</script>  
+</head>
+
+  <img src="/home/itlab/Downloads/index.jpeg" width="500" height="200">
+
+
+<h1> LOG IN </h1>
+<body>  
+<form name="myform" method="post" action="sports.html" onsubmit="return validateform()" >  
+Name: <input type="text" name="name"><br/>  
+Password: <input type="password" name="password"><br/>  
+<input type="submit" value="register">  
+</form>
+ 
+<input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other <br>
+
+
+  <input type="button" value="Submit">
+</form>
+
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <a href="equip.html> </a> <li><a href="#about">About</a></li>
+</ul>
+<p> All sports wear and equipments available as given below:</p>
+
+<div class="gallery">
+  <a target="_blank" href="ladies.jpeg">
+    <img src="/home/itlab/Downloads/ladies.jpeg" alt="ladies" width="300" height="200">
+  </a>
+  <div class="desc">Ladies </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="mens.jpeg">
+    <img src="/home/itlab/Downloads/mens.jpeg" alt="mens" width="300" height="200">
+  </a>
+  <div class="desc">Mens </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="cricket.jpeg">
+    <img src="/home/itlab/Downloads/cricket.jpeg" alt="cricket" width="300" height="200">
+  </a>
+  <div class="desc"> ThE CRICKET SECTION</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="basketball.jpeg">
+    <img src="/home/itlab/Downloads/basketball.jpeg" alt="basketball" width="300" height="200">
+  </a>
+  <div class="desc">The basketball section</div>
+</div>
+
+<img src="/home/itlab/Downloads/images.jpeg" width="500" height="200">
+</body>
+</html>
